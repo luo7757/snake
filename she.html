@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.content{
+			width: 640px;
+			height: 640px;
+			position: relative;
+			margin: 100px auto;
+			border: 20px red solid;
+			box-sizing: border-box;
+		}
+		.btn{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background-color: rgba(0,0,0,0.3);
+			left: 0;
+			top: 0;
+			z-index: 2;
+		}
+
+		.btn button{
+			background: none;
+			border: none;
+			background-size: 100% 100%;
+			left: 50%;
+			top: 50%;
+			position: absolute;
+			outline: none;
+			cursor: pointer;
+		}
+
+
+		.startBtn button{
+			width: 200px;
+			height: 80px;
+			background-image: url(16pic_6794632_s.png);
+			margin-left: -100px;
+			margin-top: -40px;
+		}
+		.pauseBtn{
+			display: none;
+		}
+		.pauseBtn button{
+			width: 70px;
+			height: 70px;
+			margin-left: -35px;
+			margin-top: -35px;
+			background-image: url(16pic_67946.png);
+		}
+
+		#snakeWrap{
+			width: 600px;
+			height: 600px;
+			/*border: 20px solid #7dd9ff;*/
+			background-color: #225675;
+		}
+		.snakeHead{
+			background-image: url(true.jpg);
+			background-size: cover;
+		}
+		.snakeBody{
+			border-radius: 50%;
+			background-color: #bfa;
+		}
+		.food{
+			background-image: url(e6794b14a0f41951976c7a445a96a6f4.jpg);
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="btn startBtn"><button></button></div>
+		<div class="btn pauseBtn"><button></button></div>
+		<div id="snakeWrap"></div>
+	</div>
+	<script type="text/javascript" src="she.js"></script>
+</body>
+</html>
